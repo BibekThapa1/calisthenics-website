@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sevillana&display=swap');
+
+#nav {
+  height: 3rem;
+  padding: 30px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 1.5px 1.5px rgb(130, 130, 130), -0.5em 0 .4em olive;
+}
+
+#nav .logo img {
+  height: 3rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+#nav .text {
+
+  font-family: "Sevillana", cursive;
+  font-weight: 500;
+  font-size: 2rem;
+  font-style: normal;
+
+}
+
+#nav .icon {
+  align-self: center;
+  font-size: 1.2rem;
+}
+
+#nav .nav-links {
+  font-family: monospace;
+  display: flex;
+  gap: 40px;
+  padding-right: 20px;
+}
+
+#nav .nav-links li:hover {
+  transition: 0.3s all linear;
+  text-decoration: underline;
+}
+
+#nav .nav-links.hide {
+  display: none;
+}
+
+/*  SideBar  */
+#sidebar {
+  font-family: monospace;
+  padding: 20px;
+  cursor: pointer;
+  position: fixed;
+  right: 0;
+  width: 80%;
+  background-color: #ffff;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  /* justify-content: center; */
+  transition: 0.3s all linear;
+  box-shadow: 3px 3px red, -0.1em 0 .4em rgb(174, 169, 169);
+  z-index: 10;
+
+}
+
+#sidebar .options {
+  margin-top: 2rem;
+  font-size: 1.1rem;
+
+}
+
+#sidebar .options li {
+  padding: 5px;
+  display: flex;
+  gap: 10px;
+  /* justify-conte
+    nt: ce; */
+  /* align-items: flex-start; */
+}
+
+#sidebar.hide {
+  right: -100%;
+}
+
+#sidebar .login-btn {
+  font-size: 1rem;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: rgb(159, 159, 216);
+}
+
+/*  Landing page  */
+.landing-page {
+  /* height: 80vh; */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.landing-page .upper-container {
+  padding: 20px;
+  font-size: 1.02rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 1.01px;
+  text-align: center;
+}
+
+.landing-page input {
+  padding: 10px;
+}
+
+.landing-page input:focus {
+  border: 0px;
+
+}
+
+/* Slider */
+/* src/Slider.css */
+.slider-container {
+  padding: 0 5px;
+  position: relative;
+  height: 400px;
+  width: 100%;
+  /* max-width: 600px; */
+  margin: auto;
+  overflow: hidden;
+  transition: 0.3s all linear;
+}
+
+.slider-container .slider {
+  height: 100%;
+  width: 100%;
+}
+
+.slider-container .image-div {
+  min-width: 100%;
+  min-height: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: 0.3s all linear;
+
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  user-select: none;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  z-index: 1;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+/* Second Container */
+.second-container {
+  margin: 20px 0;
+}
+
+.second-container .info {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background-color: #ffff;
+  margin: 20px 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.section-container h1 {
+  font-family: fantasy;
+  font-size: 1.2rem;
+}
+
+.section-container button {
+  background-color: bisque;
+  padding: 5px 10px;
+  letter-spacing: 1.2px;
+  border-radius: 10px;
+}
+
+/* Third-container */
+.third-container .hire-btn {
+  align-self: center;
+}
+
+.hire-btn {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.hire-btn button {
+  background-color: beige;
+  padding: 5px 10px;
+  font-size: 1.4rem;
+  border-radius: 15px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin:10px;
+}
+
+/* Footer */
+.footer {
+  padding: 10px;
+  background-color: burlywood;
+}
+.footer .upper-footer{
+  display: flex;
+  justify-content: space-between;
+  padding:10px 40px 10px 10px;
+}
+
+.footer .upper-footer li{
+  font-family: monospace;
+  padding:5px;
+  font-size: 1.1rem;
+}
+.footer .logo {
+  height: 80px;
+  width: 80px;
+}
+
+.footer .logo img{
+  border-radius: 100%;
+  height: 100%;
+  width:100%;
+}
+.footer p{
+  display: flex;
+  justify-content: space-between;
+  padding:5px 10px;
+}
