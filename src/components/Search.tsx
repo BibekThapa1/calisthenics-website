@@ -6,7 +6,7 @@ export const Search = () => {
 <input
  type="text" 
  placeholder='Search skills'
- className=''
+ className={`min-h-12 p-2`}
  />
     </>
   )

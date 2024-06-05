@@ -1,0 +1,31 @@
+/* Css for skills page */
+
+#skills-container{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    padding:10px;
+}
+
+#skills-container .skills{
+    border-radius: 10px;
+    background-color: #fff;
+    padding:10px;
+}
+
+#skills-container .skills h1{
+    text-align: center;
+}
+
+#skills-container .skills li{
+    font-size: 1.12rem;
+    line-height: 30px;
+    text-transform: capitalize;
+    letter-spacing: 0.8px;
+    cursor:pointer;
+    transition:0.2s all linear;
+}
+#skills-container .skills li:hover{
+     color:rgb(143, 134, 169);
+     text-decoration: underline;
+}
